@@ -3,8 +3,8 @@
     "version": "0.0.0",
     "main": "index.js",
     "scripts": {
-        "dev": "nodemon -e ts,js -w api -x 'node -r esbuild-register ./api/index.ts'",
-        "start": "node -r esbuild-register ./api/index.ts"
+        "dev": "npx nodemon",
+        "start": "npx tsc -w"
     },
     "dependencies": {
         "cors": "^2.8.5",

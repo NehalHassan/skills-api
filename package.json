@@ -1,12 +1,10 @@
 {
     "name": "skills-api",
     "version": "0.0.0",
-    "main": "dist/index.js",
+    "main": "index.js",
     "scripts": {
         "dev": "nodemon -e ts,js -w api -x 'node -r esbuild-register ./api/index.ts'",
-        "start": "node -r esbuild-register ./api/index.ts",
-        "prebuild": "echo --- tslint -c tslint.json -p tsconfig.json --fix",
-        "build": "rimraf dist && tsc"
+        "start": "node -r esbuild-register ./api/index.ts"
     },
     "dependencies": {
         "cors": "^2.8.5",

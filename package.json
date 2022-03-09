@@ -1,21 +1,24 @@
 {
     "name": "skills-api",
     "version": "0.0.0",
-    "main": "./api/index.ts",
+    "main": "dist/index.js",
     "scripts": {
-      "dev": "nodemon -e ts,js -w api -x 'node -r esbuild-register ./api/index.ts'",
-      "start": "node -r esbuild-register ./api/index.ts"
+        "dev": "nodemon -e ts,js -w api -x 'node -r esbuild-register ./api/index.ts'",
+        "start": "node -r esbuild-register ./api/index.ts",
+        "prebuild": "echo --- tslint -c tslint.json -p tsconfig.json --fix",
+        "build": "rimraf dist && tsc"
     },
     "dependencies": {
-      "cors": "^2.8.5",
-      "express": "^4.17.2"
+        "cors": "^2.8.5",
+        "express": "^4.17.2",
+        "rimraf": "^3.0.2"
     },
     "devDependencies": {
-      "@types/cors": "^2.8.12",
-      "@types/express": "^4.17.13",
-      "esbuild": "^0.14.17",
-      "esbuild-register": "^3.3.2",
-      "nodemon": "^2.0.15"
+        "@types/cors": "^2.8.12",
+        "@types/express": "^4.17.13",
+        "@types/node": "^17.0.21",
+        "esbuild": "^0.14.17",
+        "esbuild-register": "^3.3.2",
+        "nodemon": "^2.0.15"
     }
-  }
-  
+}

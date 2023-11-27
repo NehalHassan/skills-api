@@ -7,7 +7,7 @@
     "start": "npx tsc -w"
   },
   "engines": {
-    "node": "20.x"
+    "node": "18.x"
   },
   "dependencies": {
     "axios": "^1.6.2",

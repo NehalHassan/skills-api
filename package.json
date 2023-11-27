@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx nodemon",
-    "start": "npx tsc -w"
+    "start": "npx tsc -w",
+    "build": "npx tsc"
   },
   "engines": {
     "node": "18.x"
